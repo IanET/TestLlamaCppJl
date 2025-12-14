@@ -1,0 +1,7 @@
+using LlamaCpp
+
+# const model = "/mnt/c/src/models/Llama-3.2-3B-Instruct-Q4_K_M.gguf"
+const model = "/mnt/c/src/models/Llama-3.2-1B-Instruct-Q4_K_M.gguf"
+# text = read("edge_uiatest_output.txt", String)
+text = "The square of the hypotenuse is equal to the sum of the squares of the other two sides."
+run_chat(; model, prompt="Summarise the following text: $text", ctx_size=8192)
