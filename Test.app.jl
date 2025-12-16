@@ -1,9 +1,10 @@
 using LlamaCpp
 
+
 if Sys.islinux()
-    const model = "/mnt/c/src/models/Llama-3.2-3B-Instruct-Q4_K_M.gguf"
+    const model = "/mnt/c/src/models/Phi-3.5-mini-instruct.Q5_K_M.gguf"
 else
-    const model = "C:/src/models/Llama-3.2-3B-Instruct-Q4_K_M.gguf"
+    const model = "C:\\src\\models\\Phi-3.5-mini-instruct.Q5_K_M.gguf"
 end
 # const model = "/mnt/c/src/models/Llama-3.2-1B-Instruct-Q4_K_M.gguf"
 
